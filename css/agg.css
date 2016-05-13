@@ -1,175 +1,121 @@
 /* Link colours etc... */
-/* Unvisited links */ 
-a:link { 
-        color: #993333; 
-/*      color: #333399; */
-        text-decoration: none;
-        }
-/* Visited links */
-a:visited { 
-        color: #996666; 
-/*      color: #333366; */
-        text-decoration: none; 
-        }
-/* Clicked link */
-a:active { 
-        color: #000000; 
-        text-decoration: none; 
-        }
-/* Hover over link */
-a:hover { 
-        background: #bb8888;
-/*      background: #CCCCCC;*/
-   color: #eeeeee; 
-/*         color: #0000ff */
-       } 
-
-BODY {
-font-family: 'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
-        background: #dddddd;
-        font-size: 10pt;
-/*      background: #99bb99;*/
-        color: #333333;
-        margin: 0 2em 2em 14em;
+a {text-decoration: none;}
+a:link {color: #993333;}
+a:visited {color: #996666;}
+a:active {color: #000000;}
+a:hover {
+  background: #bb8888;
+  color: #eeeeee;
 }
 
-P {
-   margin-left: 1.25em;
-   margin-right: 1.25em;
-  }
+body {
+  font-family: 'Trebuchet MS', 'Open Sans', Arial, Helvetica, sans-serif;
+  background: #dddddd;
+  font-size: 10pt;
+  color: #333333;
+  margin: 0 2em 2em 14em;
+}
+
+p {
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
 
 img {
-        border: 0.5em;
-        padding: 1.1em;
-        background: #eeeeee;
+  border: 0.5em;
+  padding: 1.1em;
+  background: #eeeeee;
 }
-H1 {
-        font-family: 'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: #333333;
-        line-height: 1.75em;
-        padding-left: 1em;
-/*      text-align: center;*/
-/*      font-style: italic;*/
-        letter-spacing: 0.1em;
-        background: #bbbbbb;
-/*      background: #ccddcc;*/
-  }
-
-H1.home {
-        text-align: center;
-        padding-left: 0;
-        }
-
-H2 {
-        font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: #333333;
-        line-height: 1.5em;
-        padding-left: 2em;
-/*      text-align: center;*/
-/*      font-style: italic;*/
-        background: #cccccc;
-/*      background: #bbddbb;*/
-  }
-
-
-H3 {
-        font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: #333333;
-        line-height: 1.5em;
-/*      text-align: center;*/
-        padding-left: 4em;
-        font-style: italic;
-        background: #cccccc;
-/*      background: #aaccaa;*/
-  }
-
-H4 {
-        margin-left: 24pt;
-        font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
-        font-style: italic;
-        font-weight: bold;
-        color: #333333;
-        line-height: 1.5em;
-        font-style: italic;
-        background: #cccccc;
-/*      background: #aaddaa;*/
-  }
-
-LI {
-        font-family: 'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
-/*      font-style: italic;*/
-        margin-left: 2em;
-  }
-
-ABBR {
-        cursor: help;
+h1 {
+  font-family: 'Trebuchet MS', 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.75em;
+  padding-left: 1em;
+  letter-spacing: 0.1em;
+  background: #bbbbbb;
 }
 
-acronym {
-        cursor: help;
+h1.home {
+  text-align: center;
+  padding-left: 0;
 }
+
+h2 {
+  font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.5em;
+  padding-left: 2em;
+  background: #cccccc;
+}
+
+
+h3 {
+  font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.5em;
+  padding-left: 4em;
+  font-style: italic;
+  background: #cccccc;
+}
+
+h4 {
+  margin-left: 24pt;
+  font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.5em;
+  font-style: italic;
+  background: #cccccc;
+}
+
+li {
+  font-family: 'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
+  margin-left: 2em;
+}
+
+abbr, acronym {cursor: help;}
 
 .address {
-        font-size: 8pt;
+  font-size: 8pt;
 }
 
-/* New div elements */
-div.aligncentre { 
-        text-align: center;
-        }
-
-div.box {
-        border: none;
-        border-width: thin;
-        width: 80%;
-   margin-left: auto;
-   margin-right: auto;
+.aligncentre {
+  text-align: center;
 }
-div.copyright { 
+
+.box {
+  border: none;
+  border-width: thin;
+  width: 80%;
+  margin: auto;
+}
+.copyright {
    font-size: 0.8em;
-   font-style: italic; 
-        font-family: Georgia, 'Bitstream Vera', serif;
-        }
-
-div.deadline { 
-   line-height: 1.2em;
-   font-size: 1.2em;
-   font-weight: bold; 
-   color: #cc0000;
-  }
-
-div.nodeadline{
-   color: #990000; 
-   font-weight: normal;
-   line-height: 1.2em;
-  }
-
-div.intlabel {
-        text-align: center;
-        font-weight: bold;
-        font-size: 140%;
-        padding: 0.5em;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
+   font-style: italic;
+  font-family: Georgia, serif;
 }
 
-.wee {
-font-size: 85%;
+.intlabel {
+  text-align: center;
+  font-weight: bold;
+  font-size: 140%;
+  padding: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
+.wee {font-size: 85%;}
 
-body>div#Menu,
-body>div.map { position: fixed }
-div#Menu span.dot,              /* Hide the dot between links in this style */
-div#Menu hr {                   /* Hide the HR inside the menu */
-  display: none }
 
-div#Menu,
+body>#Menu, body>.map { position: fixed }
+#Menu span.dot,              /* Hide the dot between links in this style */
+#Menu hr {display: none;}
 
-div.map {
+#Menu, .map {
   position: absolute;
   width: 12.5em; height: auto;
   top: 1em; right: 0; bottom: 0; left: 0;
@@ -179,27 +125,18 @@ div#Menu p.navhead, div#Menu a,
 div.map p, div.map > * > li, div.map h2 {
   display: block;
   margin: 0.2em 0em 0em 0.75em;
-/*  padding: 0.25em 1em;*/
   text-indent: 0;
   text-align: left;
-/*  background: #aaaaaa;*/
-/*  background: #bbccbb;*/
   color: #666666;
   list-style: none }
 
-div.map a {
-/*  font-style: italic;*/
-  text-decoration: none;
-  color: #333333 }
-div.map a:hover {
+.map a {color: #333333;}
+.map a:hover {
   background: #666666;
-  color: #eeeeee; 
-/*  background: #CCCCCC;
-  color: #0000ff; */
-  }
+  color: #eeeeee;
+}
 
-div.map p.current {
-        background-color: #aaaaaa;
-/*   background-color: #997777;*/
-   color: white;
-  }
+.map p.current {
+  background-color: #aaaaaa;
+  color: white;
+}
