@@ -26,6 +26,7 @@ img {
   padding: 1.1em;
   background: #eeeeee;
 }
+
 h1 {
   font-family: 'Trebuchet MS', 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -50,24 +51,12 @@ h2 {
   background: #cccccc;
 }
 
-
 h3 {
   font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #333333;
   line-height: 1.5em;
   padding-left: 4em;
-  font-style: italic;
-  background: #cccccc;
-}
-
-h4 {
-  margin-left: 24pt;
-  font-family:  'Trebuchet MS', 'Bitstream Vera Sans', Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  color: #333333;
-  line-height: 1.5em;
   font-style: italic;
   background: #cccccc;
 }
@@ -99,30 +88,15 @@ abbr, acronym {cursor: help;}
   font-family: Georgia, serif;
 }
 
-.intlabel {
-  text-align: center;
-  font-weight: bold;
-  font-size: 140%;
-  padding: 0.5em;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
+body>.map { position: fixed }
 
-.wee {font-size: 85%;}
-
-
-body>#Menu, body>.map { position: fixed }
-#Menu span.dot,              /* Hide the dot between links in this style */
-#Menu hr {display: none;}
-
-#Menu, .map {
+.map {
   position: absolute;
   width: 12.5em; height: auto;
   top: 1em; right: 0; bottom: 0; left: 0;
 }
 
-div#Menu p.navhead, div#Menu a,
-div.map p, div.map > * > li, div.map h2 {
+.map p {
   display: block;
   margin: 0.2em 0em 0em 0.75em;
   text-indent: 0;
