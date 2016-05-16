@@ -4,184 +4,184 @@
   <meta name="author" content="Andy Gibb">
   <meta name="description" content="Andy G. Gibb&#39;s home page on the WWW">
   <meta name="keywords" content="Andy Gibb, aggibb, hiking, Vancouver, backpacking, snowshoeing, photography, astronomy, star formation, radio astronomy, submillimetre, interferometry, SCUBA-2, data reduction, programming, Perl, whisky, Linux">
-  <link rel="stylesheet" type="text/css" href="css/agg.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="icon" href="agg.ico" type="image/x-icon">
   <link rel="shortcut icon" href="agg.ico" type="image/x-icon">
 
-  <title>Previous Views from My Desk</title>
+  <title>The Views From My Desk</title>
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">AGG home</a>
+      </div>
 
-<h1>Previous Views from My Desk</h1>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="hiking.html">Hiking</a></li>
+          <li class="active" ><a href="photography.html">Photography</a></li>
+          <li><a href="comp.html">Computing</a></li>
+          <li><a href="whisky.html">Whisky</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Astronomy <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>My former life...</li>
+              <li role="separator" class="divider"></li>
+              <li><a href="astropages.html">Astronomer info</a></li>
+              <li><a href="research.html">My research</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-<div class="map">
-  <p title="Back to my home page"><a href="index.html">My Home Page</a></p>
-  <p title="Links a professional astronomer might use"><a href="astropages.html">Astronomy</a></p>
-  <p title="A bit about my research"><a href="research.html">Research</a></p>
-  <p title="Computers are now a way of life..."><a href="comp.html">Computing</a></p>
-  <p title="My favourite pastime"><a href="hiking.html">Hiking</a></p>
-  <p title="My other favourite pastime"><a href="whisky.html">Malt Whisky</a></p>
-</div>
+  <div class="container">
+    <div class="page-header">
+      <h1>The Views From My Desk</h1>
+    </div>
 
-<div class="home">
-<p>Right-click on any image and select 'View Image' to see full size</p>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-<div class="box">
-<img src="images/cheakamus_flowers.jpg" alt="Alpine wildflowers add colour to the view of the Cheakamus glacier" width="100%">
-<p>The massive Cheakamus glacier sandwiched between Mt Davidson (L) and Castle Towers (R) viewed from a wildflower meadow near Russet Lake, Whistler BC.</p>
-</div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listitem">
+        <div class="item active">
+          <img src="images/cheakamus_flowers.jpg" alt="Alpine wildflowers add colour to the view of the Cheakamus glacier" >
+          <div class="carousel-caption">The massive Cheakamus glacier sandwiched between Mt Davidson (L) and Castle Towers (R) viewed from a wildflower meadow near Russet Lake, Whistler BC.</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/jcmt_carousel.jpg" alt="James Clerk Maxwell Telescope carousel on Mauna Kea, HI" >
+        <div class="carousel-caption">The carousel of the James Clerk Maxwell Telescope on Mauna Kea, HI, operated jointly by the UK, Canada and the Netherlands. The telescope is hidden behind a Gore-Tex windblind for protection. With a 15-m diameter dish, it is still the world's largest submillimetre telescope.</div>
+      </div>
 
-<div class="box">
-<img src="images/jcmt_carousel.jpg" alt="James Clerk Maxwell Telescope carousel on Mauna Kea, HI" width="100%">
-<p>The carousel of the James Clerk Maxwell Telescope on Mauna Kea, HI, operated jointly by the UK, Canada and the Netherlands. The telescope is hidden behind a Gore-Tex windblind for protection. With a 15-m diameter dish, it is still the world's largest submillimetre telescope.</p>
-</div>
+      <div class="item">
+        <img src="images/mtassiniboinereflection.jpg" alt="Mt Assiniboine reflected in Lake Magog, Mt Assiniboine Provincial Park BC" >
+        <div class="carousel-caption">The Matterhorn of the Rockies: Mt Assiniboine reflected in Lake Magog, Mt Assiniboine Provincial Park BC</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/panorama_ridge.jpg" alt="Panorama Ridge reflected in Garibaldi Lake, Garibaldi Provincial Park BC" >
+        <div class="carousel-caption">Early winter snow on Panorama Ridge reflected in Garibaldi Lake, Garibaldi Provincial Park BC</div>
+      </div>
 
-<div class="box">
-<img src="images/mtassiniboinereflection.jpg" alt="Mt Assiniboine reflected in Lake Magog, Mt Assiniboine Provincial Park BC" width="100%">
-<p>The Matterhorn of the Rockies: Mt Assiniboine reflected in Lake Magog, Mt Assiniboine Provincial Park BC</p>
-</div>
+      <div class="item">
+        <img src="images/chief.jpg" alt="The Stawamus Chief and Mt Garibaldi from Shannon Falls Provincial Park" >
+        <div class="carousel-caption">The Stawamus Chief, a massive granite monolith, is popular with hikers and rock climbers alike. The hikers' trail is only slightly less steep than the climbers' routes ;-) At the left is Mt Garibaldi (2678 m, 8786 ft), the peak from which Garibaldi provincial park takes its name.</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/mtrobsonberglake.jpg" alt="Mt Robson and Berg Lake, Mt Robson Provincial Park" >
+        <div class="carousel-caption">The Berg Glacier cascading into Berg Lake below Mount Robson (Mt Robson Provincial Park, BC), the highest peak in the Canadian Rockies
+          at 3954 m (12,972 ft). The sound of the glacier calving into the lake is enough to keep you awake at night.</div>
+      </div>
 
-<div class="box">
-<img src="images/panorama_ridge.jpg" alt="Panorama Ridge reflected in Garibaldi Lake, Garibaldi Provincial Park BC" width="100%">
-<p>Early winter snow on Panorama Ridge reflected in Garibaldi Lake, Garibaldi Provincial Park BC</p>
-</div>
+      <div class="item">
+        <img src="images/matier.jpg" alt="Matier glacier, Joffre Lakes Provincial Park" >
+        <div class="carousel-caption">The Matier Glacier, draped over the rocks like a massive icy blanket in Joffre Lakes Provincial Park, BC.</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/maskedbandit.jpg" alt="Raccoon behind bars" >
+        <div class="carousel-caption">The Masked Bandit of Stanley Park. Well, one of them. <i>Procyon lotor</i> looking for an easy handout. Unfortunately, too many tourists are willing to oblige.</div>
+      </div>
 
-<div class="box">
-<img src="images/chief.jpg" alt="The Stawamus Chief and Mt Garibaldi from Shannon Falls Provincial Park" width="100%">
-<p>The Stawamus Chief, a massive granite monolith, is popular with hikers and rock climbers alike. The hikers' trail is only slightly less steep than the climbers' routes ;-) At the left is Mt Garibaldi (2678 m, 8786 ft), the peak from which Garibaldi provincial park takes its name.</p>
-</div>
+      <div class="item">
+        <img src="images/blacktuskgaribaldi.jpg" alt="The Black Tusk and Mt Garibaldi from Brandywine Meadows" >
+        <div class="carousel-caption">The Black Tusk and Mt Garibaldi from Brandywine Meadows. According to legend, the Black Tusk is the home of the mythical Thunderbird, which created thunder when it flapped its wings.</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/wedgemountlake.jpg" alt="Wedgemount Lake and its receding glacier, near Whistler BC" >
+        <div class="carousel-caption">Wedgemount Lake and its receding glacier, near Whistler BC</div>
+      </div>
 
-<div class="box">
-<img src="images/mtrobsonberglake.jpg" alt="Mt Robson and Berg Lake, Mt Robson Provincial Park" width="100%">
-<p>The Berg Glacier cascading into Berg Lake below Mount Robson (Mt Robson Provincial Park, BC), the highest peak in the Canadian Rockies
-at 3954 m (12,972 ft). The sound of the glacier calving into the lake is enough to keep you awake at night.</p>
-</div>
+      <div class="item">
+        <img src="images/lionsinsnow.jpg" alt="The Lions, from St Mark&#39;s summit, Cypress Provincial Park, BC" >
+        <div class="carousel-caption">The Lions, a well-known Vancouver landmark, from St Mark's summit, Cypress Provincial Park, BC</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/mtfrosty.jpg" alt="Looking south from Skyline II trail, Manning Provincial Park, BC" >
+        <div class="carousel-caption">Looking south from Skyline II trail, Manning Provincial Park, BC</div>
+      </div>
 
-<div class="box">
-<img src="images/matier.jpg" alt="Matier glacier, Joffre Lakes Provincial Park" width="100%">
-<p>The Matier Glacier, draped over the rocks like a massive icy blanket in Joffre Lakes Provincial Park, BC.</p>
-</div>
+      <div class="item">
+        <img src="images/lava2.jpg" alt="Close encounter with lava in Hawaii Volcanoes National Park" >
+        <div class="carousel-caption">Close encounter with lava in Hawaii Volcanoes National Park</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/tunnelsunrise.jpg" alt="Sunrise from Skyline Drive, Shenandoah NP, Virginia" >
+        <div class="carousel-caption">Summer sunrise from Skyline Drive, Shenandoah NP, Virginia</div>
+      </div>
 
-<div class="box">
-<img src="images/maskedbandit.jpg" alt="Raccoon behind bars" width="100%">
-<p>The Masked Bandit of Stanley Park. Well, one of them. <i>Procyon lotor</i> looking for an easy handout. Unfortunately, too many tourists are willing to oblige.</p>
-</div>
+      <div class="item">
+        <img src="images/champerocks.jpg" alt="Champe Rocks, West Virginia" >
+        <div class="carousel-caption">The knife-edge of Champe Rocks, West Virginia</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/morowarning.jpg" alt="Bear warning in Sequoia NP, CA" >
+        <div class="carousel-caption">You have been warned! Beneath a mist-capped Moro Rock, Sequoia National Park, CA</div>
+      </div>
 
-<div class="box">
-<img src="images/blacktuskgaribaldi.jpg" alt="The Black Tusk and Mt Garibaldi from Brandywine Meadows" width="100%">
-<p>The Black Tusk and Mt Garibaldi from Brandywine Meadows. According to legend, the Black Tusk is the home of the mythical Thunderbird, which created thunder when it flapped its wings.</p>
-</div>
-<hr>
+      <div class="item">
+        <img src="images/mirrorlake.jpg" alt="Mirror Lake, Yosemite NP, CA" >
+        <div class="carousel-caption">Which way is up? Mt Watkins viewed in Mirror Lake,  Yosemite National Park</div>
+      </div>
 
-<div class="box">
-<img src="images/wedgemountlake.jpg" alt="Wedgemount Lake and its receding glacier, near Whistler BC" width="100%">
-<p>Wedgemount Lake and its receding glacier, near Whistler BC</p>
-</div>
+      <div class="item">
+        <img src="images/tracks.jpg" alt="Lizard tracks at Eureka Dunes, Death Valley NP, CA" >
+        <div class="carousel-caption">Lizard tracks in the sand at Eureka Dunes in Death Valley National Park</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/ata3.jpg" alt="The Allen Telescope Array" >
+        <div class="carousel-caption">The first three antennas of the <a href="http://www.seti.org/seti/our_projects/allen_telescope_array/Welcome.html">Allen Telescope Array</a> to be situated at Hat Creek, CA. A total of 350 is planned to carry out SETI projects. Oh and they may do some astronomy too... :-)</div>
+      </div>
 
-<div class="box">
-<img src="images/lionsinsnow.jpg" alt="The Lions, from St Mark&#39;s summit, Cypress Provincial Park, BC" width="100%">
-<p>The Lions, a well-known Vancouver landmark, from St Mark's summit, Cypress Provincial Park, BC</p>
-</div>
+      <div class="item">
+        <img src="images/bimamoon.jpg" alt="Two BIMA telescopes and a waning crescent moon" >
+        <div class="carousel-caption">Two of the ten antennas of the BIMA interferometer based at Hat Creek, CA. Each antenna is only 6.1 m (20 ft) in diameter but the signals from the ten telescopes are combined to simulate a much larger telescope (up to 1 km across).</div>
+      </div>
 
-<hr>
+      <div class="item">
+        <img src="images/stridingedge.jpg" alt="Striding Edge in the English Lake District" >
+        <div class="carousel-caption">From whence we came: looking back along Striding Edge and Red Tarn on the approach to the summit of Helvellyn (950 m/3116 ft) in the English Lake District. What a fantastic walk....</div>
+      </div>
 
-<div class="box">
-<img src="images/mtfrosty.jpg" alt="Looking south from Skyline II trail, Manning Provincial Park, BC" width="600">
-<p>Looking south from Skyline II trail, Manning Provincial Park, BC</p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/lava2.jpg" alt="Close encounter with lava in Hawaii Volcanoes National Park" width="600">
-<p>Close encounter with lava in Hawaii Volcanoes National Park</p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/tunnelsunrise.jpg" alt="Sunrise from Skyline Drive, Shenandoah NP, Virginia" width="600">
-<p>Summer sunrise from Skyline Drive, Shenandoah NP, Virginia</p>
-</div>
-<hr>
-
-<div class="box">
-<img src="images/champerocks.jpg" alt="Champe Rocks, West Virginia" width="600">
-<p>The knife-edge of Champe Rocks, West Virginia</p>
-</div>
-<hr>
-
-<div class="box">
-<img src="images/morowarning.jpg" alt="Bear warning in Sequoia NP, CA" width="450">
-<p>You have been warned! Beneath a mist-capped Moro Rock, Sequoia National Park, CA</p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/mirrorlake.jpg" alt="Mirror Lake, Yosemite NP, CA" width="600">
-<p>Which way is up? Mt Watkins viewed in Mirror Lake,  Yosemite National Park</p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/tracks.jpg" alt="Lizard tracks at Eureka Dunes, Death Valley NP, CA" width="450">
-<p>Lizard tracks in the sand at Eureka Dunes in Death Valley National Park</p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/ata3.jpg" alt="The Allen Telescope Array" width="600">
-<p>The first three antennas of the <a href="http://www.seti.org/seti/our_projects/allen_telescope_array/Welcome.html">Allen Telescope Array</a> to be situated at Hat Creek, CA. A total of 350 is planned to carry out SETI projects. Oh and they may do some astronomy too... :-) </p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/bimamoon.jpg" alt="Two BIMA telescopes and a waning crescent moon" width="450">
-<p>Two of the ten antennas of the BIMA interferometer based at Hat Creek, CA. Each antenna is only 6.1 m (20 ft) in diameter but the signals from the ten telescopes are combined to simulate a much larger telescope (up to 1 km across).</p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/stridingedge.jpg" alt="Striding Edge in the English Lake District" width="600">
-<p>From whence we came: looking back along Striding Edge and Red Tarn on the approach to the summit of Helvellyn (950 m/3116 ft) in the English Lake District. What a fantastic walk....</p>
-</div>
-
-<hr>
-
-<div class="box">
-<img src="images/atmostrans2_big2.png" alt="Atmospheric transmission below 1 THz at the CSO" width="600">
-<p>Atmospheric transmission at frequencies below 1000 GHz for the summit of Mauna Kea, Hawaii, 4000 m (13 200 ft) above sea level. Notice how it becomes harder to see through the atmosphere at high frequencies with increasing amounts of water. This is why many telescopes are put on top of tall mountains.</p>
-</div>
-
-</div>
+      <div class="item">
+        <img src="images/atmostrans2_big2.png" alt="Atmospheric transmission below 1 THz at the CSO" >
+        <div class="carousel-caption">Atmospheric transmission at frequencies below 1000 GHz for the summit of Mauna Kea, Hawaii, 4000 m (13 200 ft) above sea level. Notice how it becomes harder to see through the atmosphere at high frequencies with increasing amounts of water. This is why many telescopes are put on top of tall mountains.</div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 
 <hr>
-<div class="copyright">
-All information and images contained within this website are copyright the author 1997&ndash;2016.
-</div>
+<div class="copyright">All information and images contained within this website are copyright the author 1997&ndash;2016.</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

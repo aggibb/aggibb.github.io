@@ -4,7 +4,7 @@
   <meta name="author" content="Andy Gibb">
   <meta name="description" content="Andy G. Gibb&#39;s home page on the WWW">
   <meta name="keywords" content="Andy Gibb, aggibb, hiking, Vancouver, backpacking, snowshoeing, photography, astronomy, star formation, radio astronomy, submillimetre, interferometry, SCUBA-2, data reduction, programming, Perl, whisky, Linux">
-  <link rel="stylesheet" type="text/css" href="css/agg.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="icon" href="agg.ico" type="image/x-icon">
   <link rel="shortcut icon" href="agg.ico" type="image/x-icon">
 
@@ -12,97 +12,139 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">AGG home</a>
+      </div>
 
-<h1>Computers etc</h1>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="hiking.html">Hiking</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li class="active" ><a href="comp.html">Computing</a></li>
+          <li><a href="whisky.html">Whisky</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Astronomy <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>My former life...</li>
+              <li role="separator" class="divider"></li>
+              <li><a href="astropages.html">Astronomer info</a></li>
+              <li><a href="research.html">My research</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
-<div class="map">
-  <p title="Back to my home page"><a href="index.html">My Home Page</a></p>
-  <p title="Links a professional astronomer might use"><a href="astropages.html">Astronomy</a></p>
-  <p title="A bit about my research"><a href="research.html">Research</a></p>
-  <p class="current" title="Computers are now a way of life..."><a href="comp.html">Computing</a></p>
-  <p title="My favourite pastime"><a href="hiking.html">Hiking</a></p>
-  <p title="My other favourite pastime"><a href="whisky.html">Malt Whisky</a></p>
-</div>
+  <div class="container">
+    <div class="page-header">
+      <h1>Computers etc</h1>
+    </div>
 
-<p>Well, it's official: I'm now a professional geek. OK, so I get paid to write computer programs which may or may not be the same thing :-) Either way, here's the usual laundry list of useful and/or interesting links related to my day-to-day computing.</p>
+    <div class="row">
+      <p>Well, it's official: I'm now a professional geek. OK, so I get paid to write computer programs which may or may not be the same thing :-) Either way, here's the usual laundry list of useful and/or interesting links related to my day-to-day computing.</p>
+    </div>
 
-<h2>Linux</h2>
+    <div class="row">
+      <h2>Linux</h2>
 
-<ul>
-<li>I am Linux user <a href="https://linuxcounter.net/user/180140.html">#180140</a> at <a href="https://linuxcounter.net/">the Linux Counter</a>. Twenty years of using Linux :-)</li>
-<li>My (former) UBC workstation runs <a href="https://getfedora.org/">Fedora 20</a> on a 6-core Phenom II <a href="http://www.x86-64.org/">AMD64</a> system with 8 GB of RAM.</li>
-<li>At home I have an older dual-core AMD64 with a mere 4 GB of RAM running <a href="http://www.ubuntu.com/">Ubuntu</a> as a server and sometime development machine. It's currently on <a href="http://releases.ubuntu.com/12.04/">12.04 LTS, Precise Pangolin</a> &mdash; partly because it's an LTS release but mostly because pangolins are cool animals (and the Ubuntu desktop artwork is super cute). System drive is a 64 GB SSD with a 2- and a 3-TB data drive.</li>
+      <ul>
+        <li>I am Linux user <a href="https://linuxcounter.net/user/180140.html">#180140</a> at <a href="https://linuxcounter.net/">the Linux Counter</a>. I first installed Linux in May 1996, which makes it now twenty years of using Linux :-) My work machine at the time was a Pentium 133 with 32 MB of RAM and a 1 GB HDD. I think it ran Slackware, but I may have switched to Red Hat at some point.</li>
+        <li>My (former) UBC workstation runs <a href="https://getfedora.org/">Fedora 20</a>; at home I'm running Ubuntu <a href="http://releases.ubuntu.com/12.04/">12.04 LTS, Precise Pangolin</a> though I'll be upgrading to <a href="http://releases.ubuntu.com/16.04/">16.04 (Xenial Xerus)</a> soon.
+          <li>The <a href="http://www.fedoraforum.org/">Fedora Forum</a> and <a href="http://ubuntuforums.org/">Ubuntu Forums</a> are useful places for help, info and advice.</li>
+          <li>Linux news at <a href="http://linuxtoday.com/">Linux Today</a> and <a href="http://lwn.net/">Linux Weekly News</a>.</li>
+      </ul>
+    </div>
 
-<li>The <a href="http://www.fedoraforum.org/">Fedora Forum</a> and <a href="http://ubuntuforums.org/">Ubuntu Forums</a> are useful places for help, info and advice.</li>
+    <div class="row">
+      <h2>Hardware</h2>
 
-<li>Linux news at <a href="http://linuxtoday.com/">Linux Today</a> and <a href="http://lwn.net/">Linux Weekly News</a>.</li>
-</ul>
+      <ul>
+        <li>My Linux box is an 8-year old dual-core AMD64 running at 2.2 GHz with a mere 4 GB of RAM running <a href="http://www.ubuntu.com/">Ubuntu</a> as a server and sometime development machine. The system drive is a 64 GB SSD with a 2- and a 3-TB data drive.</li>
 
-<h2>Hardware</h2>
+        <li>In late 2012 I took the plunge and bought a Mac, a neat little 13-inch Macbook Air with a 128 GB SSD and 8 GB RAM, which has been a phenomenal machine. I didn't hate OS X as much as I expected :-) and I could almost say I now like it, though I miss some of the GNU versions of utilities. It's up to date with OS X 10.11 El Capitan, which seems fine to me. My only real complaint is the screen &mdash; it's not good enough for accurate colour work when processing photos. Which is why, after three years, I bought a 15" Macbook Pro :-) Oh, that screen... but man does it get hot on my lap.</li>
 
-<ul>
-<li>In late 2012 I took the plunge and bought a Mac, a neat little 13-inch Macbook Air with a 128 GB SSD and 8 GB RAM, which has been a phenomenal machine. I didn't hate OS X as much as I expected :-) and I could almost say I now like it, though I miss some of the GNU versions of utilities. It's up to date with OS X 10.11 El Capitan, which seems fine to me. If I had a complaint it would be the screen &mdash; it's not good enough for accurate colour work when processing photos. Which is why, after three years, I bought a 15" Macbook Pro :-) Oh, that screen...</li>
+        <li>Of course, everyone has to have Windows machine somewhere in their closet. It's reasonably specced with an Intel quad-core CPU running at 3.1 GHz, 8 GB of RAM and a 128 GB SSD as the system drive. The 2 TB data drive is starting to look a little full (the perils of shooting raw files with 2 dSLRs). The monitor is a decent Dell 2209WA, which I trust for colour. The graphics card is a puny Radeon 5450 but it's fanless which I value more than performance. Currently it's running Windows 7 (which is a decent enough OS), and is scheduled for its free upgrade to Windows 10 sometime "soon".</li>
 
-<li>Which neatly segues into... photo processing and management duties are handled by <a href="http://www.dxo.com/us/photography/photo-software/dxo-opticspro">DxO OpticsPro</a> and <a href="http://www.acdsee.com/en/products/acdsee-19">ACD See</a> on a Windows 7 (soon to be 10) machine, reasonably specced with an Intel quad-core CPU running at 3.1 GHz, 8 GB of RAM and a 128 GB SSD as the system drive. The 2 TB data drive is starting to look a little full (the perils of shooting raw files with 2 dSLRs). The monitor is a decent Dell 2209WA, which I trust for colour. The graphics card is a puny Radeon 5450 but it's fanless which I value more than performance.</li>
-</ul>
+      </ul>
+    </div>
 
-<h2>Perl</h2>
+    <div class="row">
+      <h2>Perl</h2>
+      <ul>
+        <li> All things <a href="http://www.perl.com/">Perl</a>.</li>
+        <li> Actually, the real source of Perl's power, <a href="http://www.cpan.org/">CPAN</a>.</li>
+        <li> Perl documentation at <a href="http://perldoc.org/">perldoc.org</a>.</li>
+        <li> Learning the wonder that is <a href="https://www.manning.com/books/object-oriented-perl">Object-Oriented Perl</a>?</li>
+      </ul>
+    </div>
 
-<ul>
-<li> All things <a href="http://www.perl.com/">Perl</a>.</li>
-<li> Actually, the real source of Perl's power, <a href="http://www.cpan.org/">CPAN</a>.</li>
-<li> Perl documentation at <a href="http://perldoc.org/">perldoc.org</a>.</li>
-<li> Learning the wonder that is <a href="https://www.manning.com/books/object-oriented-perl">Object-Oriented Perl</a>?</li>
-</ul>
+    <div class="row">
+      <h2>Astronomical software</h2>
+      <ul>
+        <li>My former day job: <a href="http://www.eaobservatory.org/jcmt/instrumentation/continuum/scuba-2/">SCUBA-2 data reduction</a> software. Progress and updates can be found on the <a href="http://pipelinesandarchives.blogspot.com/">Pipelines and Archives</a> blog.</li>
+        <li>The UK <a href="http://www.starlink.ac.uk/">Starlink</a> project (now disbanded). Starlink software can be obtained from the <a href="http://starlink.eao.hawaii.edu/starlink">JAC Starlink page</a>.</li>
+        <li>The <a href="http://www.oracdr.org/oracdr">ORAC-DR</a> data reduction pipeline and its post-processing relative <a href="http://www.oracdr.org/oracdr/PICARD">PICARD</a>.</li>
+        <li> A conference a year courtesy of <a href="http://www.adass.org/">ADASS</a>.</li>
+        <li> <a href="http://fits.gsfc.nasa.gov/">FITS</a>: the standard (-ish) astronomical data format.</li>
+      </ul>
+    </div>
 
-<h2>Astronomical software</h2>
+    <div class="row">
+      <h2>Other software</h2>
+      <ul>
+        <li> The <i>real</i> way to make web pages look good: the <a href="https://www.w3.org/Style/CSS/">W3</a> site for CSS, and <a href="http://meyerweb.com/eric/css/">Eric Meyer's page on CSS</a>. </li>
+        <li> The <i>real</i> way to make your printed page look good: <a href="http://www.latex-project.org/">L<SUP>A</SUP>T<SUB>E</SUB>X</a>. Unbeatable for maths typesetting.</li>
+        <li> OK if you must use an office suite, then consider <a href="http://www.documentfoundation.org/">LibreOffice</a>. It comes with its own PDF writer, so there's no excuse for sending .doc files by email (of course, there's rarely an excuse to send .doc files by email...). Plus it supports the <a href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office">Open Document Format</a>.</li>
+        <li> But nothing beats <a href="http://www.gnu.org/software/emacs/emacs.html">Emacs</a> for doing everything else :-)</li>
+        <li> My must-have apps on Linux are (in no particular order):
+          <ul>
+            <li>Firefox and/or Google Chrome for the web</li>
+            <li>Thunderbird for email</li>
+            <li>Emacs for editing anything</li>
+            <li>Xfig for graphics</li>
+            <li>TeX/LaTeX for documentation (+dvips/dvipdf)</li>
+            <li>Evince and gv for viewing PDF and PostScript files respectively</li>
+            <li>The Gimp for photos etc</li>
+            <li>GQView and Gwenview for image viewing</li>
+            <li>LibreOffice comes in handy for the odd Word doc, making posters and presentations for conferences (though to be honest, I find Google Docs is good enough for basic documents)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-<ul>
-<li>My former day job: <a href="http://www.eaobservatory.org/jcmt/instrumentation/continuum/scuba-2/">SCUBA-2 data reduction</a> software. Progress and updates can be found on the <a href="http://pipelinesandarchives.blogspot.com/">Pipelines and Archives</a> blog.</li>
-<li>The UK <a href="http://www.starlink.ac.uk/">Starlink</a> project (now disbanded). Starlink software can be obtained from the <a href="http://starlink.eao.hawaii.edu/starlink">JAC Starlink page</a>.</li>
-<li>The <a href="http://www.oracdr.org/oracdr">ORAC-DR</a> data reduction pipeline and its post-processing relative <a href="http://www.oracdr.org/oracdr/PICARD">PICARD</a>.</li>
-<li> A conference a year courtesy of <a href="http://www.adass.org/">ADASS</a>.</li>
-<li> <a href="http://fits.gsfc.nasa.gov/">FITS</a>: the standard (-ish) astronomical data format.</li>
-</ul>
+    <div class="row">
+      <h2>Computing news and views</h2>
+      <ul>
+        <li> <a href="http://www.theregister.co.uk/">The Register</a></li>
+        <li> <a href="http://arstechnica.com/">Ars Technica</a></li>
+        <li> <a href="http://www.silentpcreview.com/">Silent PC Review</a></li>
+      </ul>
+    </div>
 
-<h2>Other software</h2>
+    <div class="row">
+      <h2>About these pages</h2>
+      <p>These pages are all hand-coded, mostly using <a href="https://www.gnu.org/software/emacs/">Emacs</a> (with a sprinking of Bluefish in the early days) and, more recently, <a href="https://atom.io/">Atom</a>. The W3 guides to <a href="https://www.w3.org/TR/html/">HTML</a> and <a href="https://www.w3.org/Style/CSS/">CSS</a>. I can be a stickler for details, so I originally write strict XHTML - I'm in the process of updating to HTML5, and making use of <a href="http://getbootstrap.com/">Bootstrap</a> for layout and styling.</p>
+    </div>
+  </div>
 
-<ul>
-<li> The <i>real</i> way to make web pages look good: the <a href="https://www.w3.org/Style/CSS/">W3</a> site for CSS, and <a href="http://meyerweb.com/eric/css/">Eric Meyer's page on CSS</a>. </li>
-<li> The <i>real</i> way to make your printed page look good: <a href="http://www.latex-project.org/">L<SUP>A</SUP>T<SUB>E</SUB>X</a>. Unbeatable for maths typesetting.</li>
-<li> OK if you must use an office suite, then consider <a href="http://www.documentfoundation.org/">LibreOffice</a>. It comes with its own PDF writer, so there's no excuse for sending .doc files by email (of course, there's rarely an excuse to send .doc files by email...). Plus it supports the <a href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office">Open Document Format</a>.</li>
-<li> But nothing beats <a href="http://www.gnu.org/software/emacs/emacs.html">Emacs</a> for doing everything else :-)</li>
-<li> My must-have apps are (in no particular order):
-        <ul>
-        <li>Firefox and/or Google Chrome for the web</li>
-        <li>Thunderbird for email</li>
-        <li>Emacs for editing anything</li>
-        <li>Xfig for graphics</li>
-        <li>TeX/LaTeX for documentation (+dvips/dvipdf)</li>
-        <li>Evince and gv for viewing PDF and PostScript files respectively</li>
-        <li>The Gimp for photos etc</li>
-        <li>GQView and Gwenview for image viewing</li>
-        <li>LibreOffice comes in handy for the odd Word doc, making posters and presentations for conferences</li>
-        </ul></li>
-</ul>
+  <hr>
+  <div class="copyright">
+    All information and images contained within this website are copyright the author 1997&ndash;2016.
+  </div>
 
-<h2>
-Computing news and views
-</h2>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-<ul>
-<li> <a href="http://www.theregister.co.uk/">The Register</a></li>
-<li> <a href="http://arstechnica.com/">Ars Technica</a></li>
-<li> <a href="http://www.silentpcreview.com/">Silent PC Review</a></li>
-</ul>
-
-<h2>About these pages</h2>
-
-<p>I've hand-coded these pages mostly using Emacs (with a sprinking of Bluefish in the early days) and the W3 guides to <a href="https://www.w3.org/TR/html/">HTML</a> and <a href="https://www.w3.org/Style/CSS/">CSS</a>. Pages have been partially updated to HTML5.</p>
-
-<hr>
-<div class="copyright">
-All information and images contained within this website are copyright the author 1997&ndash;2016.
-</div>
 </body>
 </html>

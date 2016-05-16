@@ -4,7 +4,7 @@
   <meta name="author" content="Andy Gibb">
   <meta name="description" content="Andy G. Gibb&#39;s home page on the WWW">
   <meta name="keywords" content="Andy Gibb, aggibb, hiking, Vancouver, backpacking, snowshoeing, photography, astronomy, star formation, radio astronomy, submillimetre, interferometry, SCUBA-2, data reduction, programming, Perl, whisky, Linux">
-  <link rel="stylesheet" type="text/css" href="css/agg.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="icon" href="agg.ico" type="image/x-icon">
   <link rel="shortcut icon" href="agg.ico" type="image/x-icon">
 
@@ -12,35 +12,107 @@
 </head>
 
 <body>
-<h1 class="home">The View From My Desk</h1>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">AGG home</a>
+      </div>
 
-<div class="map">
-  <p class="current" title="About me"><a href="agg.html">Dr Andrew G. Gibb</a></p>
-  <p title="Vancouver, BC, Canada"><span class="address">
-  <a href="http://vancouver.ca/">Vancouver, BC,</a><br>
-  <a href="https://www.cia.gov/library/publications/the-world-factbook/geos/ca.html">Canada</a><br>
-  </span></p>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="hiking.html">Hiking</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="comp.html">Computing</a></li>
+          <li><a href="whisky.html">Whisky</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Astronomy <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>My former life...</li>
+              <li role="separator" class="divider"></li>
+              <li><a href="astropages.html">Astronomer info</a></li>
+              <li><a href="research.html">My research</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
 
-  <p title="Links a professional astronomer might use"><a href="astropages.html">Astronomy</a></p>
-  <p title="A bit about my research"><a href="research.html">Research</a></p>
-  <p title="Computers are now a way of life..."><a href="comp.html">Computing</a></p>
-  <p title="My favourite pastime"><a href="hiking.html">Hiking</a></p>
-  <p title="My other favourite pastime"><a href="whisky.html">Malt Whisky</a></p>
-</div>
+  <div class="container">
+    <div class="page-header">
+      <h1 class="home">The View From My Desk</h1>
+    </div>
 
-<div class="aligncentre">
-  <p>Welcome to my home page. Pick a link from the left to go someplace interesting.</p>
+    <div class="row col-md-10 col-md-offset-1">
+      <img src="images/lake_ohara.jpg" title="Grand scenery around Lake O'Hara, Yoho National Park" alt="Grand scenery around Lake O'Hara, Yoho National Park" width="100%">
+      <p>Lake O'Hara is every bit as beautiful as people say. This is the view from the Yukness Ledges, part of the Alpine Circuit hike in Yoho National Park, British Columbia</p>
+      <p><a href="theview.html">(<i>The View From My Desk</i> archive)</a></p>
+    </div>
 
-  <div class="box">
-  <img src="images/lake_ohara.jpg" alt="Grand scenery around Lake O'Hara, Yoho National Park" width="100%">
-  <p>Lake O'Hara is every bit as beautiful as people say. This is the view from the Yukness Ledges, part of the Alpine Circuit hike in Yoho National Park, British Columbia</p>
-  <p><a href="theview.html">(<i>The View From My Desk</i> archive)</a></p>
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>Hiking stuff</h3>
+            <p>How can you live in Vancouver and not hike?</p>
+          </div>
+          <a href="hiking.html"><img src="images/hiking_edit2.jpeg" alt="Hiking near Vancouver"></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>Picture taking</h3>
+            <p>It all started when we moved somewhere new...</p>
+          </div>
+          <a href="photography.html"><img src="images/photo_edit1.jpeg" alt="..."></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>Computery stuff</h3>
+            <p>It's how I make my living. I even do it for fun!</p>
+          </div>
+          <a href="comp.html"><img src="images/comp_edit1.jpeg" alt="..."></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <div class="caption">
+            <h3>The water of life</h3>
+            <p>The Scots make the best <i>uisge beatha</i></p>
+          </div>
+          <a href="whisky.html"><img src="images/whisky_edit1.jpeg" alt="..."></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="agg.html">Andy Gibb</a></li>
+        <li><a href="http://vancouver.ca/">Vancouver, BC</a></li>
+        <li><a href="https://www.cia.gov/library/publications/the-world-factbook/geos/ca.html">Canada</a></li>
+      </ol>
+    </div>
+
   </div>
-</div>
 
 <hr>
-<div class="copyright">
-All information and images contained within this website are copyright the author 1997&ndash;2016.
-</div>
+<footer class="copyright">
+All content copyright the author 1997&ndash;2016. All rights reserved.
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

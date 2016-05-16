@@ -4,7 +4,7 @@
   <meta name="author" content="Andy Gibb">
   <meta name="description" content="Andy G. Gibb&#39;s home page on the WWW">
   <meta name="keywords" content="Andy Gibb, aggibb, hiking, Vancouver, backpacking, snowshoeing, photography, astronomy, star formation, radio astronomy, submillimetre, interferometry, SCUBA-2, data reduction, programming, Perl, whisky, Linux">
-  <link rel="stylesheet" type="text/css" href="css/agg.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="icon" href="agg.ico" type="image/x-icon">
   <link rel="shortcut icon" href="agg.ico" type="image/x-icon">
 
@@ -12,97 +12,129 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">AGG home</a>
+      </div>
 
-<h1>Everyone comes from somewhere...</h1>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="hiking.html">Hiking</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="comp.html">Computing</a></li>
+          <li><a href="whisky.html">Whisky</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Astronomy <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>My former life...</li>
+              <li role="separator" class="divider"></li>
+              <li><a href="astropages.html">Astronomer info</a></li>
+              <li><a href="research.html">My research</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
 
-<div class="map">
-  <p title="Back to my home page"><a href="index.html">My Home Page</a></p>
-  <p title="Links a professional astronomer might use"><a href="astropages.html">Astronomy</a></p>
-  <p title="A bit about my research"><a href="research.html">Research</a></p>
-  <p title="Computers are now a way of life..."><a href="comp.html">Computing</a></p>
-  <p title="My favourite pastime"><a href="hiking.html">Hiking</a></p>
-  <p title="My other favourite pastime"><a href="whisky.html">Malt Whisky</a></p>
+  <div class="container">
+    <div class="page-header">
+      <h1>Everyone comes from somewhere...</h1>
+    </div>
+
+    <div class="row">
+    <h2>The early years</h2>
+      <p>Came into the world in a hospital in the county of Wiltshire, sometime in the late 1960s. Lived there for the first two years of my life. Unsurprisingly, I don't remember much about it.</p>
+
+      <p>Moved to Hythe, Hampshire. Joined by two sisters and a brother over the years. Got me an education at Langdown Infant and Junior schools (which have since merged and renamed), then Noadswood Comprehensive for a bunch of 'O'-levels and finally Totton Sixth-form college for some 'A'-levels.</p>
+
+      <p>Nice things about Hythe:</p>
+      <ul>
+        <li>It's close to the New Forest (now a National Park).</li>
+        <li>It's by the sea.</li>
+        <li>It's got a half-mile long pier complete with electric train to catch a ferry to Southampton (aka 'Town').</li>
+      </ul>
+    </div>
+
+    <div class="row">
+    <h2>University and beyond</h2>
+      <p>In 1987 I went to the <a href="https://www.kent.ac.uk/">University of Kent</a> in Canterbury. I escaped in 1997 after a BSc, PhD and a 3-year postdoc. Ten years is long enough for anyone. During that time I lived in Herne Bay, Whitstable, Canterbury and Faversham. Whitstable is famous for its oysters, and has a great beach for walking on and paddling about at low tide. Faversham has the Shepherd Neame brewery and is surrounded by fields of hops. Mmm hops... It was during this time that, for better or worse, I began to write my own web pages.</p>
+
+      <p>Nice things about Kent:</p>
+      <ul>
+        <li>Graduating (twice) in the cathedral is a treat.</li>
+        <li>Canterbury has lots of pubs.</li>
+        <li>Pick your own fruit. Strawberries, cherries, gooseberries, raspberries, apples, pears and elderberries (wild).</li>
+        <li>I met my wife there :-)</li>
+      </ul>
+    </div>
+
+    <div class="row">
+    <h2>A country-spanning career of sorts</h2>
+
+    <h3>UK, Oct 1997</h3>
+    <p>Postdoc at the <a href="http://www.leeds.ac.uk/">University of Leeds</a>. Brilliant location and pretty good city too. Actually, we lived in Wakefield for most of the time, where we bought our first house. Easy access to the M1 (and thus the National Parks) meant that our hiking obsession really took off.</p>
+
+    <p>Nice things about Leeds:</p>
+    <ul>
+      <li>Location &mdash; we could get to four National Parks in two hours or less.... (Also quick train service to London.)</li>
+      <li>Great city &mdash; pubs, shops, gigs you name it.</li>
+      <li>Bradford is <b>the</b> place to go for a curry.</li>
+    </ul>
+
+    <h3>USA, Jul 2000</h3>
+    <p>Postdoc at the <a href="http://www.umd.edu/">University of Maryland, College Park</a>. Before I applied for this job I hadn't appreciated that it was so close to Washington DC. We lived in Greenbelt for a couple of years before moving to downtown Silver Spring close to <a href="http://www.einsteinbros.com/">Einstein Bagels</a> and <a href="http://www.cariboucoffee.com/">Caribou Coffee</a> :-)</p>
+
+    <p>Nice things about Maryland:</p>
+    <ul>
+      <li>Close to Washington DC ('The District'). This is also a negative point due to the traffic congestion and air pollution in summer (the local driving has to be experienced to be believed....).</li>
+      <li>The weather. OK, so July and August get a bit hot and oppressive (although the thunderstorms are fun), but autumn is great and even the cold winters are often sunny.</li>
+      <li>More pick your own fruit! I'm now converted to peaches.</li>
+      <li>Easy drive to a fair bit of good hiking (except for the lack of views due to the number of trees...), such as Shenandoah NP.</li>
+    </ul>
+
+    <h3>Canada, Aug 2004</h3>
+    <p>Moved into software development at the <a href="http://www.ubc.ca/">University of British Columbia</a> in Vancouver. After 10 years at UBC I moved into the so-called 'real world', still doing the software thing. Living in Kitsilano (Kits) which is a really nice area. Of course, we can see the mountains from our balcony... We're still here so I guess we like it :-)</p>
+
+    <p>Nice things about Vancouver:</p>
+    <ul>
+      <li>Mountains. Lots of mountains. Mountains = <a href="hiking.html">hiking</a>.</li>
+      <li>Coffee &mdash; this place has so many decent coffee shops! Who needs to go to Starbucks? Seriously, why does Starbucks even exist here?</li>
+      <li>Beaches &mdash; Kits, Jericho, Locarno, Acadia, and of course, Wreck ;-)</li>
+      <li><a href="http://vancouver.ca/parks-recreation-culture/stanley-park.aspx">Stanley Park</a>, a little bit of wilderness in the city.</li>
+      <li>A pretty good bus service makes it easy to get around without a car (which we still use even though we now have a car...).</li>
+      <li>It's by the sea</li>
+      <li>Did I mention the mountains? No? Let me say it again: MOUNTAINS! Talk about an embarrassment of riches...</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <h2>Relatives online</h2>
+    <p>My little brother, the <a href="http://www.metal-archives.com/bands/Beautician/31213">Beautician</a>.</p>
+  </div>
+
+  <div class="row">
+    <h2>Who am I not?</h2>
+    <p>Some folks may be thinking of <a href="http://en.wikipedia.org/wiki/Andy_Gibb">this person</a> :-)</p>
+  </div>
 </div>
-
-<h2>The early years</h2>
-
-<p>Came into the world in a hospital in Bradford-on-Avon, Wiltshire, sometime in the late 1960s. Lived in Warminster for two years. Unsurprisingly, I don't remember much about it. (My arrival into the world is the one and only time I've been to Bradford-on-Avon too, though I've driven really close to it!)</p>
-
-<p>Moved to Hythe, Hampshire. Joined by two sisters and a brother over the years. Got me an education at Langdown Infant and Junior schools (which have since merged and renamed Waterside Primary), then Noadswood Comprehensive for a bunch of 'O'-levels and finally Totton Sixth-form college for some 'A'-levels.</p>
-
-<p>Nice things about Hythe:</p>
-<ul>
-<li>It's close to the New Forest (now a National Park).</li>
-<li>It's by the sea.</li>
-<li>It's got a half-mile long pier complete with electric train to catch a ferry to Southampton (aka 'Town').</li>
-</ul>
-
-<h2>University and beyond</h2>
-
-<p>In 1987 I went to the <a href="https://www.kent.ac.uk/">University of Kent</a> in Canterbury. I escaped in 1997 after a BSc, PhD and a 3-year postdoc. Ten years is long enough for anyone. During that time I lived in Herne Bay, Whitstable, Canterbury and Faversham. Whitstable is famous for its oysters, and has a great beach for walking on and paddling about at low tide. Faversham has the Shepherd Neame brewery and is surrounded by fields of hops. Mmm hops... It was during this time that, for better or worse, I began to write my own web pages.</p>
-
-<p>Nice things about Kent:</p>
-<ul>
-<li>Graduating (twice) in the cathedral is a treat.</li>
-<li>Canterbury has lots of pubs.</li>
-<li>Pick your own fruit. Strawberries, cherries, gooseberries, raspberries, apples, pears and elderberries (wild).</li>
-<li>I met my wife there :-)</li>
-</ul>
-
-<h2>A country-spanning career of sorts</h2>
-
-  <h3>UK, Oct 1997</h3>
-
-  <p>Postdoc at the <a href="http://www.leeds.ac.uk/">University of
-  Leeds</a>. Brilliant location and pretty good city too. Actually, we lived in Wakefield for most of the time, where we bought our first house. Easy access to the M1 (and thus the National Parks) meant that our hiking obsession really took off.</p>
-
-  <p>Nice things about Leeds:</p>
-  <ul>
-  <li>Location &mdash; we could get to four National Parks in two hours or less.... (Also quick train service to London.)</li>
-  <li>Great city &mdash; pubs, shops, gigs you name it.</li>
-  <li>Bradford is <b>the</b> place to go for a curry.</li>
-  </ul>
-  </li>
-
-  <h3>USA, Jul 2000</h3>
-
-  <p>Postdoc at the <a href="http://www.umd.edu/">University of Maryland, College Park</a>. Before I applied for this job I hadn't appreciated that it was so close to Washington DC. We lived in Greenbelt for a couple of years before moving to downtown Silver Spring close to <a href="http://www.einsteinbros.com/">Einstein Bagels</a> and <a href="http://www.cariboucoffee.com/">Caribou Coffee</a> :-)</p>
-
-  <p>Nice things about Maryland:</p>
-  <ul>
-  <li>Close to Washington DC ('The District'). This is also a negative point due to the traffic congestion and air pollution in summer (the local driving has to be experienced to be believed....).</li>
-  <li>The weather. OK, so July and August get a bit hot and oppressive (although the thunderstorms are fun), but autumn is great and even the cold winters are often sunny.</li>
-  <li>More pick your own fruit! I'm now converted to peaches.</li>
-  <li>Easy drive to a fair bit of good hiking (except for the lack of views due to the number of trees...), such as Shenandoah NP.</li>
-  </ul>
-
-  <h3>Canada, Aug 2004</h3>
-  
-  <p>Moved into software development at the <a href="http://www.ubc.ca/">University of British Columbia</a> in Vancouver. After 10 years at UBC I moved into the so-called 'real world', still doing the software thing. Living in Kitsilano (Kits) which is a really nice area. Of course, we can see the mountains from our balcony... We're still here so I guess we like it :-)</p>
-
-  <p>Nice things about Vancouver:</p>
-  <ul>
-  <li>Mountains. Lots of mountains. Mountains = <a href="hiking.html">hiking</a>.</li>
-  <li>Coffee &mdash; this place has so many decent coffee shops! Who needs to go to Starbucks? Seriously, why does Starbucks even exist here?</li>
-  <li>Beaches &mdash; Kits, Jericho, Locarno, Acadia, and of course, Wreck ;-)</li>
-  <li><a href="http://vancouver.ca/parks-recreation-culture/stanley-park.aspx">Stanley Park</a>, a little bit of wilderness in the city.</li>
-  <li>A pretty good bus service makes it easy to get around without a car (which we still use even though we now have a car...).</li>
-  <li>It's by the sea</li>
-  <li>Did I mention the mountains? No? Let me say it again: MOUNTAINS! Talk about an embarrassment of riches...</li>
-  </ul>
-  </li>
-
-<h2>Relatives online</h2>
-
-<p>My little brother, the <a href="http://www.metal-archives.com/bands/Beautician/31213">Beautician</a>.</p>
-
-<h2>Who am I not?</h2>
-
-<p>Some folks may be thinking of <a href="http://en.wikipedia.org/wiki/Andy_Gibb">this person</a> :-)</p>
 
 <hr>
 <div class="copyright">
 All information and images contained within this website are copyright the author 1997&ndash;2016.
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

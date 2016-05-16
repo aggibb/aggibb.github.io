@@ -4,7 +4,7 @@
   <meta name="author" content="Andy Gibb">
   <meta name="description" content="Andy G. Gibb&#39;s home page on the WWW">
   <meta name="keywords" content="Andy Gibb, aggibb, hiking, Vancouver, backpacking, snowshoeing, photography, astronomy, star formation, radio astronomy, submillimetre, interferometry, SCUBA-2, data reduction, programming, Perl, whisky, Linux">
-  <link rel="stylesheet" type="text/css" href="css/agg.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="icon" href="agg.ico" type="image/x-icon">
   <link rel="shortcut icon" href="agg.ico" type="image/x-icon">
 
@@ -12,134 +12,169 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">AGG home</a>
+      </div>
 
-<h1>Astronomy work links</h1>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="hiking.html">Hiking</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="comp.html">Computing</a></li>
+          <li><a href="whisky.html">Whisky</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Astronomy <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>My former life...</li>
+              <li role="separator" class="divider"></li>
+              <li><a href="astropages.html">Astronomer info</a></li>
+              <li><a href="research.html">My research</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
 
-<div class="map">
-  <p title="Back to my home page"><a href="index.html">My Home Page</a></p>
-  <p class="current" title="Links a professional astronomer might use"><a href="astropages.html">Astronomy</a></p>
-  <p title="A bit about my research"><a href="research.html">Research</a></p>
-  <p title="Computers are now a way of life..."><a href="comp.html">Computing</a></p>
-  <p title="My favourite pastime"><a href="hiking.html">Hiking</a></p>
-  <p title="My other favourite pastime"><a href="whisky.html">Malt Whisky</a></p>
-</div>
+  <div class="container">
+    <div class="page-header">
+      <h1>Astronomy work links</h1>
+    </div>
 
-<h2><acronym title="JCMT: James Clerk Maxwell Telescope">JCMT</acronym> and related</h2>
-<ul>
-<li>The <a href="http://www.eaobservatory.org/jcmt/">JCMT</a> is now run by the  <a title="EAO: East Asian Observatory"  href="http://www.eaobservatory.org/">East Asian Observatory</a>.</li>
-<li>Download <a href="http://omp.eao.hawaii.edu/cgi-bin/projecthome.pl">JCMT data</a> from the <acronym title="OMP: Observation Management Project">OMP</acronym> pages or the archive at <a title="CADC: Canadian Astronomy Data Centre" href="http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/jcmt/">CADC</a>.</li>
-<li>Old-style JCMT data reduction with <a href="http://www.starlink.ac.uk/docs/sc8.htx/sc8.html">SPECX</a> and <a title="SCUBA User Reduction Facility" href="http://www.starlink.ac.uk/docs/sun216.htx/sun216.html">SURF</a>. </li>
-<li>New-style JCMT data reduction with <a href="http://www.starlink.ac.uk/docs/sun258.htx/sun258.html">SMURF</a> for <a href="http://www.starlink.ac.uk/docs/sc21.htx/sc21.html">SCUBA-2</a> and <a href="http://www.eaobservatory.org/jcmt/instrumentation/heterodyne/data-reduction/reducing-acsis-data/">ACSIS</a></li>
-</ul>
+    <div class="row">
+      <h2><acronym title="JCMT: James Clerk Maxwell Telescope">JCMT</acronym> and related</h2>
+      <ul>
+        <li>The <a href="http://www.eaobservatory.org/jcmt/">JCMT</a> is now run by the  <a title="EAO: East Asian Observatory"  href="http://www.eaobservatory.org/">East Asian Observatory</a>.</li>
+        <li>Download <a href="http://omp.eao.hawaii.edu/cgi-bin/projecthome.pl">JCMT data</a> from the <acronym title="OMP: Observation Management Project">OMP</acronym> pages or the archive at <a title="CADC: Canadian Astronomy Data Centre" href="http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/jcmt/">CADC</a>.</li>
+        <li>Old-style JCMT data reduction with <a href="http://www.starlink.ac.uk/docs/sc8.htx/sc8.html">SPECX</a> and <a title="SCUBA User Reduction Facility" href="http://www.starlink.ac.uk/docs/sun216.htx/sun216.html">SURF</a>. </li>
+        <li>New-style JCMT data reduction with <a href="http://www.starlink.ac.uk/docs/sun258.htx/sun258.html">SMURF</a> for <a href="http://www.starlink.ac.uk/docs/sc21.htx/sc21.html">SCUBA-2</a> and <a href="http://www.eaobservatory.org/jcmt/instrumentation/heterodyne/data-reduction/reducing-acsis-data/">ACSIS</a></li>
+      </ul>
+    </div>
 
-<h2><acronym title="BIMA: Berkeley-Illinois-Maryland Association">BIMA</acronym> and related</h2>
+    <div class="row">
+      <h2><acronym title="BIMA: Berkeley-Illinois-Maryland Association">BIMA</acronym> and related</h2>
+      <ul>
+        <li>BIMA is no more: it was superseded by <a href="http://www.mmarray.org/">CARMA</a>. However, even CARMA is no more... (there doesn't seem to be much going on in terms of millimetre interferometry these days.)</li>
+        <li>BIMA data is reduced with <a href="http://carma.astro.umd.edu/miriad/" title="Multichannel Image Reconstruction, Image Analysis and Display ">MIRIAD</a>. Note that BIMA data should be reduced with the older V3 series of MIRIAD. CARMA data reduction should use V4.</li>
+        <li> Other useful stuff includes <a href="http://bima.astro.umd.edu/wip/">WIP</a> and various other things on the <acronym title="Laboratory for Millimeter Astronomy">LMA</acronym> <a href="http://carma.astro.umd.edu/general/software.html">software</a> page. </li>
+      </ul>
+    </div>
 
-<ul>
-<li>BIMA is no more: it was superseded by <a href="http://www.mmarray.org/">CARMA</a>. However, even CARMA is no more... (there doesn't seem to be much going on in terms of millimetre interferometry these days.)</li>
-<li>BIMA data is reduced with <a href="http://carma.astro.umd.edu/miriad/" title="Multichannel Image Reconstruction, Image Analysis and Display ">MIRIAD</a>. Note that BIMA data should be reduced with the older V3 series of MIRIAD. CARMA data reduction should use V4.</li>
-<li> Other useful stuff includes <a href="http://bima.astro.umd.edu/wip/">WIP</a> and various other things on the <acronym title="Laboratory for Millimeter Astronomy">LMA</acronym> <a href="http://carma.astro.umd.edu/general/software.html">software</a> page. </li>
-</ul>
+    <div class="row">
+      <h2> Other telescopes</h2>
+      <ul>
+        <li>Radio:
+          <ul>
+            <li><a href="https://science.nrao.edu/facilities/gbt/">GBT</a> Green Bank, WV</li>
+            <li><a href="http://www.merlin.ac.uk/index.html">MERLIN</a> at Jodrell Bank</li>
+            <li><a href="http://www.mpifr-bonn.mpg.de/en/effelsberg">Effelsberg</a> Germany</li>
+            <li><a href="http://www.narrabri.atnf.csiro.au/">ATCA</a> Narrabri, Australia</li>
+            <li><a href="http://www.parkes.atnf.csiro.au/">Parkes</a>, Australia</li>
+            <li>The <a href="https://science.nrao.edu/facilities/vla">Karl G. Jansky Very Large Array</a> Socorro, NM</li>
+          </ul>
+        </li>
+        <li>Millimetre/submillimetre:
+          <ul>
+            <li><a href="http://www.iram-institute.org/">IRAM</a>, 30 m at Pico Veleta in Spain, interferometer on Plateau de Bure, near Grenoble, France</li>
+            <li><a href="http://www.chalmers.se/en/centres/oso/Pages/default.aspx">Onsala</a>, Sweden</li>
+            <li><a href="http://www.astro.umass.edu/~fcrao/">FCRAO</a>, MA</li>
+            <li><a href="http://www.narrabri.atnf.csiro.au/mopra/">Mopra</a>, Coonabarabran, Australia</li>
+            <li><a href="http://www.mmarray.org/">CARMA</a> at Cedar Flat, CA</li>
+            <li><a href="http://www.lmtgtm.org/">LMT</a>, Sierra Negra, Mexico</li>
+            <li><a href="http://cso.caltech.edu/">CSO</a> on Mauna Kea, HI (closed in Sep 2015)</li>
+            <li><a href="https://www.cfa.harvard.edu/sma/">SMA</a> on Mauna Kea, HI</li>
+            <li><a href="http://www.apex-telescope.org/">APEX</a> in the Atacama desert, Chile</li>
+            <li><a href="http://www.almaobservatory.org/">ALMA</a>, also in the Atacama desert, Chile</li>
+            <li><a href="https://www.ccatobservatory.org/">CCAT</a> to be built in &mdash; where else? – Chile (well, maybe not...)</li>
+            <li><a href="http://sci.esa.int/herschel/">Herschel Space Observatory</a> launched in May 2009</li>
+          </ul>
+        </li>
+        <li>Infrared:
+          <ul>
+            <li><a href="http://www.spitzer.caltech.edu/">Spitzer Space Telescope</a> somewhere overhead :-)</li>
+            <li><a href="https://www.as.arizona.edu/ukirt">UKIRT</a> on Mauna Kea, HI</li>
+            <li><a href="http://www.gemini.edu/">Gemini</a> &mdash; Mauna Kea, HI, and Cerro Pachón, Chile</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-<h2> Other telescopes</h2>
+    <div class="row">
+      <h2>Useful utilities</h2>
+      <ul>
+        <li>Molecular spectroscopy:
+          <ul>
+            <li>The <acronym title="JPL: Jet Propulsion Laboratory">JPL</acronym> <a href="http://spec.jpl.nasa.gov/">Molecular Spectroscopy</a> home page.</li>
+            <li> <acronym title="NIST: National Institue for Standards and Technology">NIST</acronym> recommended rest frequencies for <a href="http://www.nist.gov/pml/data/micro/index.cfm">Observed Interstellar Molecular Microwave Transitions</a>.</li>
+            <li>The <a href="https://www.astro.uni-koeln.de/cdms">Cologne Database for Molecular Spectroscopy</a>.</li>
+          </ul>
+        </li>
 
-<ul>
-<li>Radio:
-  <ul>
-    <li><a href="https://science.nrao.edu/facilities/gbt/">GBT</a> Green Bank, WV</li>
-    <li><a href="http://www.merlin.ac.uk/index.html">MERLIN</a> at Jodrell Bank</li>
-    <li><a href="http://www.mpifr-bonn.mpg.de/en/effelsberg">Effelsberg</a> Germany</li>
-    <li><a href="http://www.narrabri.atnf.csiro.au/">ATCA</a> Narrabri, Australia</li>
-    <li><a href="http://www.parkes.atnf.csiro.au/">Parkes</a>, Australia</li>
-    <li>The <a href="https://science.nrao.edu/facilities/vla">Karl G. Jansky Very Large Array</a> Socorro, NM</li>
-  </ul>
-</li>
-<li>Millimetre/submillimetre:
-  <ul>
-    <li><a href="http://www.iram-institute.org/">IRAM</a>, 30 m at Pico Veleta in Spain, interferometer on Plateau de Bure, near Grenoble, France</li>
-    <li><a href="http://www.chalmers.se/en/centres/oso/Pages/default.aspx">Onsala</a>, Sweden</li>
-    <li><a href="http://www.astro.umass.edu/~fcrao/">FCRAO</a>, MA</li>
-    <li><a href="http://www.narrabri.atnf.csiro.au/mopra/">Mopra</a>, Coonabarabran, Australia</li>
-    <li><a href="http://www.mmarray.org/">CARMA</a> at Cedar Flat, CA</li>
-    <li><a href="http://www.lmtgtm.org/">LMT</a>, Sierra Negra, Mexico</li>
-    <li><a href="http://cso.caltech.edu/">CSO</a> on Mauna Kea, HI (closed in Sep 2015)</li>
-    <li><a href="https://www.cfa.harvard.edu/sma/">SMA</a> on Mauna Kea, HI</li>
-    <li><a href="http://www.apex-telescope.org/">APEX</a> in the Atacama desert, Chile</li>
-    <li><a href="http://www.almaobservatory.org/">ALMA</a>, also in the Atacama desert, Chile</li>
-    <li><a href="https://www.ccatobservatory.org/">CCAT</a> to be built in &mdash; where else? – Chile (well, maybe not...)</li>
-    <li><a href="http://sci.esa.int/herschel/">Herschel Space Observatory</a> launched in May 2009</li>
-  </ul>
-</li>
-<li>Infrared:
-  <ul>
-    <li><a href="http://www.spitzer.caltech.edu/">Spitzer Space Telescope</a> somewhere overhead :-)</li>
-    <li><a href="https://www.as.arizona.edu/ukirt">UKIRT</a> on Mauna Kea, HI</li>
-    <li><a href="http://www.gemini.edu/">Gemini</a> &mdash; Mauna Kea, HI, and Cerro Pachón, Chile</li>
-  </ul>
-</li>
-</ul>
+        <li>The <a href="http://skyview.gsfc.nasa.gov/">Skyview</a> Virtual Observatory &mdash; see what your favourite part of the sky looks like at various wavelengths.</li>
 
-<h2>
-Useful utilities
-</h2>
+        <li>Convert B1950 coordinates to J2000 and more with the <a title="NED: NASA Extragalactic Database" href="http://ned.ipac.caltech.edu/forms/calculator.html">NED Coordinate &amp; Galactic Extinction Calculator</a>.</li>
 
-<ul>
-  <li>Molecular spectroscopy:
-    <ul>
-      <li>The <acronym title="JPL: Jet Propulsion Laboratory">JPL</acronym> <a href="http://spec.jpl.nasa.gov/">Molecular Spectroscopy</a> home page.</li>
-      <li> <acronym title="NIST: National Institue for Standards and Technology">NIST</acronym> recommended rest frequencies for <a href="http://www.nist.gov/pml/data/micro/index.cfm">Observed Interstellar Molecular Microwave Transitions</a>.</li>
-      <li>The <a href="https://www.astro.uni-koeln.de/cdms">Cologne Database for Molecular Spectroscopy</a>.</li>
-    </ul>
-  </li>
+        <li>Various <a href="http://tycho.usno.navy.mil/time.html">time-related</a> services from the <aBBR title="United States Naval Observatory">USNO</aBBR>, including a <a href="http://tycho.usno.navy.mil/sidereal.html">Sidereal Time</a> calculator.</li>
 
-  <li>The <a href="http://skyview.gsfc.nasa.gov/">Skyview</a> Virtual Observatory &mdash; see what your favourite part of the sky looks like at various wavelengths.</li>
+        <li>Search astronomical catalogues with <a href="http://vizier.u-strasbg.fr/cgi-bin/VizieR">VizieR</a>.</li>
+      </ul>
+    </div>
 
-  <li>Convert B1950 coordinates to J2000 and more with the <a title="NED: NASA Extragalactic Database" href="http://ned.ipac.caltech.edu/forms/calculator.html">NED Coordinate &amp; Galactic Extinction Calculator</a>.</li>
+    <div class="row">
+    <h2>Journals online</h2>
+      <ul>
+        <li>The <a title="Astrophysics Data System" href="http://adsabs.harvard.edu/abstract_service.html">ADS</a> facility to search for abstracts published in the major astronomical journals.</li>
 
-  <li>Various <a href="http://tycho.usno.navy.mil/time.html">time-related</a> services from the <aBBR title="United States Naval Observatory">USNO</aBBR>, including a <a href="http://tycho.usno.navy.mil/sidereal.html">Sidereal Time</a> calculator.</li>
+        <li>An alternative is a facility offered by the <a lang="fr" title="Centre de Donn&eacute;es astronomiques de Strasbourg" href="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib">CDS</a> in Strasbourg. Full versions of images and tables can also be obtained from this <a lang="fr" title="Centre de Donn&eacute;es astronomiques de Strasbourg" href="http://cdsweb.u-strasbg.fr/abstract.html">CDS</a> site.</li>
 
-  <li>Search astronomical catalogues with <a href="http://vizier.u-strasbg.fr/cgi-bin/VizieR">VizieR</a>.</li>
-</ul>
+        <li>Electronic editions of:
+          <ul>
+            <li><a href="http://mnras.oxfordjournals.org/">Monthly Notices of the Royal Astronomical Society</a></li>
+            <li><a href="http://iopscience.iop.org/0004-637X/">The Astrophysical Journal</a></li>
+            <li><a href="http://www.aanda.org/">Astronomy &amp; Astrophysics</a></li>
+            <li><a href="http://iopscience.iop.org/1538-3881/">The Astronomical Journal</a></li>
+            <li><a href="http://www.journals.uchicago.edu/journals/pasp"> Publications of the Astronomical Society of the Pacific</a></li>
+            <li><a href="http://pasj.oxfordjournals.org/">Publications of the Astronomical Society of Japan</a></li>
+          </ul>
+        </li>
 
-<h2>Journals online</h2>
-<ul>
-  <li>The <a title="Astrophysics Data System" href="http://adsabs.harvard.edu/abstract_service.html">ADS</a> facility to search for abstracts published in the major astronomical journals.</li>
+        <li>Preprints from:
+          <ul>
+            <li>The <a href="http://arxiv.org/archive/astro-ph/">astro-ph</a> preprint list on the arXiv.</li>
+            <li> <a href="http://www.ifa.hawaii.edu/users/reipurth/newsletter.htm">The Star Formation Newsletter</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-  <li>An alternative is a facility offered by the <a lang="fr" title="Centre de Donn&eacute;es astronomiques de Strasbourg" href="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib">CDS</a> in Strasbourg. Full versions of images and tables can also be obtained from this <a lang="fr" title="Centre de Donn&eacute;es astronomiques de Strasbourg" href="http://cdsweb.u-strasbg.fr/abstract.html">CDS</a> site.</li>
+    <div class="row">
+    <h2>Conferences and meetings</h2>
+      <p>Plan your next vacation by checking out where the next <a href="http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/meetings/">interesting conference</a> is being held :-)</p>
 
-  <li>Electronic editions of:
-    <ul>
-      <li><a href="http://mnras.oxfordjournals.org/">Monthly Notices of the Royal Astronomical Society</a></li>
-      <li><a href="http://iopscience.iop.org/0004-637X/">The Astrophysical Journal</a></li>
-      <li><a href="http://www.aanda.org/">Astronomy &amp; Astrophysics</a></li>
-      <li><a href="http://iopscience.iop.org/1538-3881/">The Astronomical Journal</a></li>
-      <li><a href="http://www.journals.uchicago.edu/journals/pasp"> Publications of the Astronomical Society of the Pacific</a></li>
-      <li><a href="http://pasj.oxfordjournals.org/">Publications of the Astronomical Society of Japan</a></li>
-    </ul>
-  </li>
+    <h2>Organizations</h2>
+      <ul>
+        <li><a href="http://www.ras.org.uk/">The Royal Astronomical Society</a></li>
+        <li><a href="https://aas.org/">The American Astronomical Society</a></li>
+        <li><a href="http://www.iau.org/">International Astronomical Union</a></li>
+      </ul>
+    </div>
+  </div>
 
-  <li>Preprints from:
-    <ul>
-      <li>The <a href="http://arxiv.org/archive/astro-ph/">astro-ph</a> preprint list on the arXiv.</li>
-      <li> <a href="http://www.ifa.hawaii.edu/users/reipurth/newsletter.htm">The Star Formation Newsletter</a></li>
-    </ul>
-  </li>
-</ul>
+  <hr>
+  <div class="copyright">All information and images contained within this website are copyright the author 1997&ndash;2016.</div>
 
-<h2>Conferences and meetings</h2>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-<p>Plan your next vacation by checking out where the next <a href="http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/meetings/">interesting conference</a> is being held :-)
-</p>
-
-<h2>Organizations</h2>
-<ul>
-  <li><a href="http://www.ras.org.uk/">The Royal Astronomical Society</a></li>
-  <li><a href="https://aas.org/">The American Astronomical Society</a></li>
-  <li><a href="http://www.iau.org/">International Astronomical Union</a></li>
-</ul>
-
-<hr>
-<div class="copyright">
-All information and images contained within this website are copyright the author 1997&ndash;2016.
-</div>
 </body>
 </html>
