@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,800");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
 /* Link colours etc... */
 a {text-decoration: none;}
 a:link {color: #993333;}
@@ -15,8 +15,8 @@ body {
 }
 
 img {
-  padding: 0.8em;
-  background: #eeeeee;
+  padding: 0.4em;
+//  background: #eeeeee;
 }
 
 body, h1, h2, h3 {
